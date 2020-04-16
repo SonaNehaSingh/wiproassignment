@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AmazonApp" duration-ms="70098" started-at="2020-04-16T13:37:53Z" finished-at="2020-04-16T13:39:03Z">
+  <suite name="AmazonApp" duration-ms="190866" started-at="2020-04-16T22:59:44Z" finished-at="2020-04-16T23:02:55Z">
     <groups>
     </groups>
-    <test name="Setting" duration-ms="70098" started-at="2020-04-16T13:37:53Z" finished-at="2020-04-16T13:39:03Z">
+    <test name="Setting" duration-ms="190866" started-at="2020-04-16T22:59:44Z" finished-at="2020-04-16T23:02:55Z">
       <class name="setting.CountrySetting">
-        <test-method status="PASS" signature="changeCountryName(java.lang.String, java.lang.String)[pri:0, instance:setting.CountrySetting@2b9627bc]" name="changeCountryName" duration-ms="59955" started-at="2020-04-16T13:37:53Z" data-provider="MenuDetails" finished-at="2020-04-16T13:38:53Z">
+        <test-method status="PASS" signature="changeCountryName(java.lang.String, java.lang.String)[pri:0, instance:setting.CountrySetting@2b9627bc]" name="changeCountryName" duration-ms="180660" started-at="2020-04-16T22:59:44Z" data-provider="MenuDetails" finished-at="2020-04-16T23:02:45Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeCountryName -->
-        <test-method status="PASS" signature="killtask()[pri:0, instance:setting.CountrySetting@2b9627bc]" name="killtask" is-config="true" duration-ms="10071" started-at="2020-04-16T13:38:53Z" finished-at="2020-04-16T13:39:03Z">
+        <test-method status="PASS" signature="killtask()[pri:0, instance:setting.CountrySetting@2b9627bc]" name="killtask" is-config="true" duration-ms="10115" started-at="2020-04-16T23:02:45Z" finished-at="2020-04-16T23:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killtask -->

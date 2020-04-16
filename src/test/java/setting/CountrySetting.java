@@ -28,6 +28,7 @@ public class CountrySetting extends TestBase {
 	
 	public WebDriverWait wait;
 	
+	
 	@Test(dataProvider="MenuDetails", dataProviderClass=TestData.class)
 	public void changeCountryName(String menuname,String submenuame) throws IOException, InterruptedException {
 	
@@ -58,7 +59,6 @@ public class CountrySetting extends TestBase {
 		u.scrollToText(menuname); Thread.sleep(5000);
 		utils.selectmenuitem(spage.menunames, menuname);
 		
-		//utils.selectmenuitem(spage.menunames, submenuame);
 		spage.countryandlangmenu.click();
 		spage.countrybtn.click();
 		spage.australiaradiobtn.click();
