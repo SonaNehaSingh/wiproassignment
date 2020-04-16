@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AmazonApp]">
+  <listeners>
+    <listener class-name="resources.Listener"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Setting(failed)">
+    <classes>
+      <class name="setting.CountrySetting">
+        <methods>
+          <include name="updateCountry" invocation-numbers="0"/>
+          <include name="killtask"/>
+        </methods>
+      </class> <!-- setting.CountrySetting -->
+    </classes>
+  </test> <!-- Setting(failed) -->
+</suite> <!-- Failed suite [AmazonApp] -->

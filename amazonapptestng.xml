@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce">
+
+<listeners>
+	<listener class-name="resources.Listener"/>
+	<listener class-name="resources.ExtentReporterNG"/>
+</listeners>
+
+  <test  name="EC_Module_1">
+    <classes>
+      <class name="practise.AppiumFramwork.Ecommerc_TC_01"/>
+    </classes>
+  </test> 
+</suite>
