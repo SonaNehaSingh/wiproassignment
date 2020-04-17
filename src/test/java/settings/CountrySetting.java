@@ -31,6 +31,7 @@ public class CountrySetting extends TestBase {
 	@BeforeTest
 	public void killNodes() throws IOException, InterruptedException {
 		killAllNode();
+		Thread.sleep(4000);
 	}
 	
 	@Test(dataProvider="MenuDetails", dataProviderClass=TestData.class)
@@ -60,7 +61,7 @@ public class CountrySetting extends TestBase {
 			homepage.humbergemenuimage.click();
 		}
 		
-		u.scrollToText(menuname); Thread.sleep(5000);
+		u.scrollToText(menuname); Thread.sleep(3000);
 		utils.selectmenuitem(spage.menunames, menuname);
 		
 		spage.countryandlangmenu.click();
