@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AmazonApp" duration-ms="188017" started-at="2020-04-17T11:07:36 IST" finished-at="2020-04-17T11:10:44 IST">
+    <groups>
+    </groups>
+    <test name="Setting" duration-ms="188017" started-at="2020-04-17T11:07:36 IST" finished-at="2020-04-17T11:10:44 IST">
+      <class name="setting.CountrySetting">
+        <test-method status="PASS" signature="killNodes()[pri:0, instance:setting.CountrySetting@51cdd8a]" name="killNodes" is-config="true" duration-ms="98" started-at="2020-04-17T11:07:36 IST" finished-at="2020-04-17T11:07:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killNodes -->
+        <test-method status="PASS" signature="changeCountryName(java.lang.String, java.lang.String)[pri:0, instance:setting.CountrySetting@51cdd8a]" name="changeCountryName" duration-ms="187634" started-at="2020-04-17T11:07:37 IST" data-provider="MenuDetails" finished-at="2020-04-17T11:10:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[settings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Counry & Language]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeCountryName -->
+      </class> <!-- setting.CountrySetting -->
+    </test> <!-- Setting -->
+  </suite> <!-- AmazonApp -->
+</testng-results>

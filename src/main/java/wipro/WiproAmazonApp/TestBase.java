@@ -39,7 +39,6 @@ public class TestBase {
 	//This util method is to start appium server 
 	public AppiumDriverLocalService startServer() {
 		
-		//boolean flag=checkServerIsRunning((Integer) prop.get("portnumber"));
 		boolean flag=checkServerIsRunning(4723);
 		
 		if (!flag) {
@@ -120,6 +119,5 @@ public class TestBase {
 	
 	public static void killAllNode() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("taskkill /I /FM node.exe");
-		Thread.sleep(10000);
 	}
 }

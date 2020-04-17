@@ -1,0 +1,4 @@
+# Created at 2020-04-17T11:07:32.608
+Boot Manifest-JAR contains absolute paths in classpath 'E:\WiproAmazonApp\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

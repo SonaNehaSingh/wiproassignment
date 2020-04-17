@@ -1,4 +1,4 @@
-package setting;
+package settings;
 
 
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageobject.HomePage;
@@ -28,6 +28,10 @@ public class CountrySetting extends TestBase {
 	
 	public WebDriverWait wait;
 	
+	@BeforeTest
+	public void killNodes() throws IOException, InterruptedException {
+		killAllNode();
+	}
 	
 	@Test(dataProvider="MenuDetails", dataProviderClass=TestData.class)
 	public void changeCountryName(String menuname,String submenuame) throws IOException, InterruptedException {
@@ -70,12 +74,9 @@ public class CountrySetting extends TestBase {
 		
 		spage.donebtn.click();
 		
+		service.stop();
+		
 	}
 	
-	@AfterTest
-	public void killtask() throws IOException, InterruptedException {
-		service.stop();
-		killAllNode();
-	}
 	
 }

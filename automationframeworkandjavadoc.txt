@@ -1,0 +1,72 @@
+
+Wipro assignment: Mobile automation testing
+
+App name: Amazon 
+
+Steps to be perform through automation
+
+1. launch amazon app
+2. click on humberge menu 
+3. goto settings
+4. change the country name to "Australia"
+
+Tools: Appium
+Language: Java
+Framework: TestNG
+Reporting tool: Extent report
+Project type: Maven
+
+Description about framework: This is a maven project, here we used Page Object Model approach to separate the test case from locator,
+to avoid duplication of locator and make the code clean, in this framework used exent reports for reporting and used Listner(ITestListner interface),
+so using this listner class we can perform an action when any test case will fail/skipped/passed. In this framework test cases are classified module wise.
+Below the file structure of framework
+
+
+Project structure
+
+WiproAmazonApp(project name)
+	src/main/java
+		pageobject 
+			--HomePage.java (having locators to dedicated page)
+			--LoginPage.java
+			--SettingPage.java
+		resources
+			--ExtentReportNG.java 
+			--Listener.java 
+			--TestData.java (having test data)
+			--cong.properties (used for store the data, like: appname, appurl)
+		wipro.AmazonApp
+			--TesBase.java (having utils method, which we can use in all over framework, like: setdependencies, screenshot)
+			--CommonUtils.java
+			--Utilities.java (having utilities method, like: scrolling)
+			
+	src/main/test
+		settings
+			--CountrySetting.java (having test case related to country setting flow, like: changecountyname)
+			
+	Amazon_shoping.apk(app)
+	Maven Dependencies
+	TestNG
+	htmlreport (having the test report in html format)
+	screenshot (having screen shot for failure test case, and it further seprated with dedicated tescase)
+	pom.xml (having all dependencies and plugings)
+	testng.xml
+	
+
+
+Note: before execute the code please login to the app
+
+-------------------------------------------------------------------------------------------------
+Java method used 
+
+1. File f= new File(path of file), to read the file
+2. FileInputStream fis= new FileInputStream(f)
+3. Properties p = new Properties(), to read the properties file
+5. Date: to get the system date and time
+6. Runtime, to run the file
+7. ServerSocket, this class use to get server information, in this framewor use this class to check the port is free or not
+8. try catch, to handle the exception
+9. static, used static variable and static method
+10. FileUtils, to copy the file from source to destination
+
+

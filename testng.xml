@@ -7,9 +7,9 @@
 	<listener class-name="resources.ExtentReporterNG"/>
 </listeners>
 
-  <test  name="Setting">
+  <test  name="Settings">
     <classes>
-      <class name="setting.CountrySetting" />
+      <class name="settings.CountrySetting" />
     </classes>
   </test> 
 </suite>
